@@ -1,20 +1,151 @@
-.main-nav{
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
     color: white;
     background-color: #21293d;
-    padding: 2rem;
+    padding: 10px;
     border-bottom-left-radius: 2rem
 }
-.main-nav ul {
-   text-align: right;
-   margin-left: auto;
+.navbar-nav {
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
    text-decoration: none;
+   list-style-type: none;
+   padding-right:2.5rem;
 }
-.main-nav .navbar-brand{
+.nav-bar .navbar-brand{
+    padding: 8px 3rem 0 3rem;
+    margin-top: 14px;
+    display: inline-block;
+    color:white;
+    font-size:25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.nav-bar .menu {
     color:white;
     font-size:22px;
-    font-weight: 700;
 }
-.main-nav ul a {
+.about-section{
+    padding: 100px 0;
+}
+.project-section,.blog-section,.tech-section{
+    padding-bottom: 100px;
+}
+.text-section{
+    max-width: 550px;
+}
+.container{
+    margin-left: 100px;
+    margin-right:100px;
+    display:flex;
+    /* align-items: center; */
+}
+.col-left{
+  
+    flex-basis:50%;
+}
+.col-left .heading{
+    font-size: 35px;
+    font-weight: 600;
+    color:#21293d;
+    line-height: 2.8rem;
+}
+.col-right .heading{
+    font-size: 35px;
+    font-weight: 600;
+    color:#21293d;
+}
+.col-left p{
+    font-size: 22px;
+    color:#000000;
+    
+}
+.col-right p{
+    font-size: 22px;
+    color:#000000;
+    
+}
+.col-left .btn-secondary{
+    border: 3px solid #21293d;
+    background-color:transparent;
+    outline: none;
+    color:#21293d;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:1rem;
+    padding:18px 40px;
+}
+.col-right .btn-secondary{
+    border: 3px solid #21293d;
+    background-color:transparent;
+    outline: none;
+    color:#21293d;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:1rem;
+    padding:18px 40px;
+}
+.col-right{
+    flex-basis:50%;
+}
+.tech-section .heading{
+    font-size:35px;
+    font-weight: 600;
+    color:#21293d;
+}
+.tech-section p{
+    font-size:24px;
+}
+.tech-container{
+    width:500px;
+    margin:0 auto;
+    align-items: center;
+}
+.logo{
+    width:65px;
+}
+.logos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.logoDiv{
+    margin:1rem;
+}
+footer{
+    background-color: #21293d;
+    padding: 5px 0 5px 0;
+    border-top-right-radius: 2rem;
+}
+.footer-p{
+    text-align: center; 
+    color:white; 
+    font-size:20px;
+}
+.footer-ul{
+    text-decoration: none;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    padding:0;
+    margin-top:25px;
+}
+.footer-nav{
+    text-decoration: none;
+   
+}
+.menu{
+    margin:12px;
+    text-decoration: none;
+}
+.footer-ul i{
+    font-size:27px;
     color:white;
-    font-size:18px;
 }

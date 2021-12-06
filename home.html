@@ -3,30 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm main-nav">
-            <a class="navbar-brand" href="#">Avneet Kaur</a>
+        <div class="nav-bar">
+            <div class="navbar-brand" href="#">Avneet Kaur</div>
             <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
+            <li class="menu">
+                <a class="menu" href="home.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="project.html">Projects</a>
+            <li class="menu">
+                <a class="menu" href="project.html">Projects</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blogs</a>
+            <li class="menu">
+                <a class="menu" href="blog.html">Blogs</a>
             </li>
             </ul>     
-        </nav>    
+        </div>    
     </header>
+    <section class="about-section">
+        <div class="container">
+            <div class="col-left" style="margin-top:25px;">
+                <div class="text-section" style="margin-left:50px">
+                    <div class="heading">
+                        Hi there!<br>
+                        I'm Avneet. <br>
+                    </div>
+                    <p>I am a Web Developer, currently building web <br>
+                        applications using MERN stack to strengthen my<br> 
+                        skills. I have made websites and apps using<br> 
+                        HTML, CSS, Javascript and NodeJS. I am excited <br>
+                        to keep learning and enhancing my skills.
+                    </p>
+                    <p>Thank you for taking the time to visit my website.<br>
+                        Have a great day!
+
+                    </p>
+                    <a href="projects.html"><button class="btn-secondary">See my work</button></a>
+                </div>
+            </div>
+            <div class="col-right">
+                <img src="images/main.svg" alt="noo" width="500px" style="margin-left:80px">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="col-left" style="margin-left:50px">
+                <img src="images/project2.svg" alt="noo" width="500px">
+            </div>
+            <div class="col-right" style="margin-left:50px;margin-top:25px;">
+                <div class="text-section">
+                    <div class="heading">
+                        My Projects
+                    </div>
+                    <p>Here I have listed some of my Web-Development<br> 
+                    projects which I have hosted online along with their source code.
+                    </p>
+                    <a href="projects.html"><button class="btn-secondary">Projects</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div class="container">
+            <div class="col-left" style="margin-left:50px;margin-top:25px">
+                <div class="text-section">
+                    <div class="heading">
+                        My Blogs
+                    </div>
+                    <p>Apart from Web-Development and also write <br>
+                        some technical and non-technical blogs. Uptill<br>
+                         now I have written 1 technical and 1 non-technical blog.
+                    </p>
+                    <a href="blog.html"><button class="btn-secondary">Blogs</button></a>
+                </div>
+            </div>
+            <div class="col-right"style="margin-left:50px">
+                <img src="images/Blog.svg" alt="noo" width="500px" >
+            </div>
+        </div>
+    </section>
+    <section class="tech-section">
+        <div class="heading" style="text-align: center;">Tools and Technologies</div>
+        <p style="text-align: center; width:55%;margin:1.5rem auto">Below are some of the tools and technologies which<br>
+           I am familiar with in Web Development</p>
+        <div class="tech-container">
+            <div class="logos">
+				<div class="html logoDiv">
+					<img src="images/html.svg" alt="" class="logo">
+					<figcaption>HTML</figcaption>
+				</div>
+
+				<div class="css logoDiv">
+					<img src="images/css.svg" alt="" class="logo">
+					<figcaption>CSS</figcaption>
+				</div>
+
+				<div class="js logoDiv">
+					<img src="images/js.svg" alt="" class="logo">
+					<figcaption>JavaScript</figcaption>
+				</div>
+
+				<div class="jquery logoDiv">
+					<img src="images/jquery.svg" alt="" class="logo">
+					<figcaption>jQuery</figcaption>
+				</div>
+
+				<div class="bootstrap logoDiv">
+					<img src="images/bootstrap.svg" alt="" class="logo">
+					<figcaption>Bootstrap</figcaption>
+				</div>
+
+				<div class="git logoDiv">
+					<img src="images/gitHub.svg" alt="" class="logo">
+					<figcaption>Git Hub</figcaption>
+				</div>
+
+				<div class="react logoDiv">
+					<img src="images/react.svg" alt="" class="logo">
+					<figcaption>ReactJS</figcaption>
+				</div>
+
+				<div class="node logoDiv">
+					<img src="images/nodejs.svg" alt="" class="logo">
+					<figcaption>NodeJS</figcaption>
+				</div>
+			</div>
+
+
+        </div>
+    </section>
+    <footer>
+       <p class="footer-p">Connect with me</p>
+       <ul class="footer-ul">
+        <li><a class="menu footer-nav" target="_blank" href="https://github.com"><i class="fab fa-github-alt"></i></a>
+        </li>
+        <li><a class="menu footer-nav" target="_blank" href="https://www.linkedin.com/in/avneet-kaur-34b7b9190/"><i	class="fab fa-linkedin-in"></i></a></li>
+        <li><a class="menu footer-nav" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="menu footer-nav" target="_blank" href="https://twitter.com/Avvneet_K2"><i class="fab fa-twitter"></i></a></li>
+       </ul>
+    </footer>
 </body>
 </html>
